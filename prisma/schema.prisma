@@ -20,3 +20,23 @@ model User {
 
     @@map("users")
 }
+
+model Roule {
+
+    id          String   @id @default(uuid())
+    name        String
+    description String
+    created_at  DateTime @default(now())
+
+    @@map("roules")
+}
+
+model Permission {
+
+    id          String   @id @default(uuid())
+    name        String
+    description String
+    created_at  DateTime @default(now())
+
+    @@map("pemissions")
+}
