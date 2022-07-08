@@ -47,7 +47,7 @@ export class SessionController {
             expiresIn: '1d'
         })
 
-        return response.json({
+        return response.status(200).json({
             token,
             user
         })
